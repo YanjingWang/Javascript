@@ -1,0 +1,30 @@
+<!--type html then tab, type html then tab, type body then tab-->
+<!--use prettier plugin to format code, use validator to check html error: http://validator.w3.org use https://jigsaw.w3.org/css-validator/ to check CSS error-->
+<!DOCTYPE html>
+<html lang="en">
+    <!--give information about this page-->
+    <head> 
+        <title>My first web page</title>
+        <style>
+            img{
+                width:100px;
+                border-radius: 50px;
+                float: left; 
+                margin-right: 10px;
+            }
+            /* if remove p the rule will be applied to all username */
+            p.username{
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+    <!--img element can ot have child elements-->
+    <img src="images/CharlotteWang.jpg" alt="Charlotte Wang Profile"> 
+    <p class="username">@msmaverickiiii</p>
+    <p>I love Carlos Ruiz</p>
+    </body>
+</html> 
+
+<!--http://127.0.0.1/ IP represents local computer port number 5500 on which our web server is listening, web server is waiting for http requests on this port-->
+

@@ -1,0 +1,352 @@
+body {
+  /*background-color: fffff2; Offwhite*/
+  font-family: -apple-system, "Helvetica Neue", "Lucida Grande";
+  padding-bottom: 20px;
+  border: 1px solid transparent;
+}
+
+ul li {
+  text-align: center;
+  list-style: inside;
+  padding-right: 50px;
+}
+
+h1 {
+  color: black;
+}
+
+p {
+  color: black;
+}
+
+a:link{
+  color: black;
+  text-decoration: none;
+}
+
+a:visited{
+  color: black;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+.header {
+  display: block;
+  padding-top: 10px;
+  text-align: center;
+  font-size: 24pt;
+  text-decoration: none;
+}
+
+.parent_navigation{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 25px;
+  text-align: center;
+}
+
+.navigation a{
+  text-align: center;
+  display: inline-block; /*Stack links*/
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-weight: bold;
+  font-size: 14pt;
+  border: 2px solid black;
+  outline-width: 10px;
+  margin: 5px;
+}
+
+.about_header p{
+  flex: 0 0 45%;
+  text-align: center;
+  padding-bottom: 5px;
+  padding-top: 30px;
+}
+
+
+.about_list_box a{
+  border: 2px solid black;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 30px;
+  padding-right: 30px;
+  outline-width: 100px;
+  font-weight: bold;
+}
+
+.about_list_box {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+
+.thesis_blocks{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.thesis_block a{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-align: center;
+  display: inline-block; /*Stack links*/
+  padding-top: 5px;
+  padding-bottom: 0px;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 14pt;
+  border: 2px solid black;
+  margin: 10px;
+  min-width: 100px;
+  max-width: 250px;
+}
+
+.career_block a{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-align: center;
+  display: inline-block; /*Stack links*/
+  padding-top: 5px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  font-size: 14pt;
+  border: 2px solid black;
+  margin: 1px;
+  min-width: 100px;
+  max-width: 400px;
+}
+
+
+.thesis_block_no_outline a{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-align: center;
+  display: inline-block; /*Stack links*/
+  padding-top: 5px;
+  padding-bottom: 0px;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 14pt;
+  margin: 10px;
+  min-width: 100%px;
+  max-width: 250px;
+}
+
+.thesis_block p.blurb{
+  text-align: center;
+  display: inline-block; /*Stack links*/
+  font-size: 12pt;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.thesis_block p.wordcount{
+  text-align: center;
+  display: inline-block; /*Stack links*/
+  font-size: 10pt;
+}
+
+ .divID {
+   background-image: url(../images/pic1.jpeg);
+   background-repeat: no-repeat;
+   height: 600px;
+   width: 100%;
+   background-size: 500px;
+   background-position: right;
+   padding-bottom: 100px;
+   padding-right: 200px;
+   flex: 1;
+   /* right: 100px; */
+}
+
+.index_image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  max-height: 100%;
+  max-width: 800px;
+}
+
+.medium_image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  max-height: 80%;
+  max-width: 400px;
+  padding-top: 25px
+}
+
+.index_image_p {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  max-width: 400px;
+  max-height: 100%;
+}
+
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+.landscapeID {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  min-width: 100px;
+  min-height: 600px;
+  height: auto;
+  max-width: 800px;
+  max-height: 100%;
+  background-position: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.portraitID {
+
+  background-repeat: no-repeat;
+  background-size: 100%;
+  min-width: 100px;
+  min-height: 600px;
+  height: auto;
+  max-width: 400px;
+  max-height: 100%;
+  background-position: center top;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.projectBlock{
+  display: block;
+  text-align: center;
+}
+
+.outerProjectBlock {
+  display : flex;
+  align-items : center;
+  margin-bottom: 0;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.innerProjectBlock {
+  vertical-align: middle;
+  /* border: 1px solid black; */
+  padding-left: 100px;
+  margin-bottom: 0;
+}
+
+.imgContainer {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 300px;
+}
+
+#images{
+    text-align:center;
+}
+
+#flex_wrapper{
+  display: flex;
+  align-items: center;
+}
+
+#project_text{
+  /* flex: 0 0 45%; */
+  /* padding-left: 5%; */
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+
+a:hover span{
+    text-decoration:underline;
+}
+
+div.form
+{
+    display: block;
+    text-align: center;
+}
+
+form
+{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+    /* width: 500px; */
+}
+input[type=text] {
+   width: 300px;
+   height: 30px;
+}
+::-webkit-input-placeholder {
+   text-align: center;
+}
+
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.line {
+    height: 20px;
+    background-color: black;
+}
+
+.responsive_video{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+
+.responsive_video iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+.glossary_table td{
+    border: 1px solid;
+    padding: 5px;
+}
+.glossary_table table{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.table-responsive {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 0px auto;
+  text-align: center;
+}

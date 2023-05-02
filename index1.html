@@ -1,0 +1,135 @@
+<!-- tp open the console in Chrome, press Ctrl+Shift+J or CMD+Opt+J -->
+<!-- Or use CodePen or Scrimba -->
+<!-- Javascript is all about implementing behavior on web page while HTML is all about content  -->
+<!--ID is unique o reference HTML elements, a calss is reference pointing to one or more elements-->
+<!-- <script>
+    console.log("hello world");
+</script> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width,initial-scale=1.0">
+    <meta name="description" content="This is my first webpage">
+    <meta name="keywords" content="web development, web design, web dev">
+    <mata name="author" content="Charlotte Wang">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Web Dev: a complete blog for beginners</title> <!-- put scripts at the end of body section-->
+        <link rel="shortcut icon" href="/images/CharlotteWang.jpg" , type="image/x-icon">
+        <!--should have show logo on url place-->
+</head>
+
+<body>
+    <h1>hello world</h1>
+    <script src="index1.js"> // tells the browser our JS code is now in index1.js 
+    // this is my first JS code: statement an action can be carried out in this case we want to log a message on the console
+    //console.log("hello world");
+    </script>
+    <iframe src="youtube.com"></iframe>
+    <h1>Student Application Form</h1>
+    <form action="index1.js">
+        <input type="text" name="name" id="name">
+        <input type="submit" value="submit">
+        <form action="form.php">
+            <label for="studentName">Name:</label> <!--for attribute should be same as Id-->
+            <br>
+            <div>
+                Name: <input type="text" name="name" value="" id="studentName" ,placeholder="Enter Name" class="">
+                <!--label: cursor directly appears on your input tag-->
+                <!--submit button: send data to backend when we click submit-->
+            </div>
+            <br>
+            <br>
+            <div>
+                Contact: <input type="text" name="contact" id="" , placeholder="Enter Number">
+            </div>
+            <br>
+            <br>
+            <div>
+                Email: <input type="email" name="email" id="" , placeholder="Enter Email">
+            </div>
+            <br>
+            <br>
+            <div>
+                Gender: Male <input type="radio" name="gender" id=""> Female <input type="radio" name="gender" id="">
+                <!--same name in all of radio buttons so can only select one of the buttons-->
+            </div>
+            <br>
+            <br>
+            <div>
+                Do you accept terms and conditions? Yes <input type="checkbox" name="checkbox" id=""> No <input
+                    type="checkbox" name="checkbox" id="">
+            </div>
+            <br>
+            <br>
+            <div>
+                Datebirth <input type="date" name="datebirth" id="">
+            </div>
+            <br>
+            <br>
+            <div>
+                Upload your images <input type="file" name="datebirth" id="" , accept="image/*">
+            </div>
+            <br>
+            <br>
+            <div>
+                Residential address <br> <textarea name="address" id="" cols="30" rows="10"></textarea>
+            </div>
+            <br>
+            <br>
+            <div>
+                Web Dev <select name="options" id="">
+                    <option value="">Front End</option>
+                    <option value="">Back End</option>
+                    <option value="">Full Stack</option>
+                </select>
+            </div>
+            <br>
+            <input type="submit" value="Submit form"> <br>
+            <br>
+            <input type="reset" value="Clear form"> <br>
+            <br>
+            <input type="button" value="Click me"> <br>
+            <!--JS or JQuery to create your own function, once user click the button the function will run-->
+        </form>
+    </form>
+    <h1>Block and Inline Elements</h1>
+    <p style="border: 2px solid slateblue;"> Block Element with border</p>
+    <span style="color: slateblue;"> Inline Element with color</span>
+    <p style="background-color: slateblue;">Blcok Elment2</p>
+    <span style="border: 2px solid slateblue;">Inline Element with border</span>
+
+    <div class="" id=""></div>
+    <div class="container"></div> <!--.container shortcut for class,  p.container put your class in p tag -->
+    <div id="unique"></div> <!--#unique shortcut for Id-->
+    <p class="para" id="roll"></p> <!--p.para#roll for class and Id-->
+    <div class="container"></div>
+    <div class="container"></div>
+    <div class="container"></div>
+    <div class="container"></div> <!--div.container*4 shortcut for creating 4 divs-->
+
+    <h1>HTML Entities</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, est voluptas quod &nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;adipisci nesciunt quas
+        esse sit, architecto, porro vero maxime? Nemo maiores a beatae iusto cumque eum dolores hic.</p>
+    <!--lorem-10 for random words--> <!--&nbsp non-breaking space-->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. &copy; 2023 &dollar; &lt; &gt;</p>
+    <h1>SEO and Semantic tags</h1>
+    <header></header>
+    <nav>Home ContactUs</nav>
+    <main>
+        <p>Main Section</p><video></video><img>
+        <div></div>
+    </main>
+    <section>Sections</section>
+    <article>self-contained content</article>
+    <aside>Ads</aside>
+    <summary>Summary</summary>
+    <details>Details view or hide</details>
+    <footer>We have all copyrights and trademarks &copy;</footer>
+    <h1>HTML5 Tags</h1>
+</body>
+
+</html>
