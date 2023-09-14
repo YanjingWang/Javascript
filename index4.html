@@ -1,0 +1,44 @@
+<!--https://tailwindcss.com/
+    VSCODE Powershell mode
+npm init -y                                            //initialize your node package manager vite will aloow you start your web application on your local server
+npm install -D tailwindcss postcss autoprefixer vite   //package.json
+npx tailwindcss init                                   //tailwind.config.js
+
+npm run start
+
+create file postcass.config.js
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Tailwind css</title>
+    <title>@apply directive</title>
+    <title>@layer directive</title>
+</head>
+
+<body>
+    <nav class="pt-4 py-4 bg-slate-600">
+        <ul class="flex">
+            <li class="mx-4 text-white">Home</li>
+            <li class="mx-4 text-white">About</li>
+            <li class="mx-4 text-white">Contact Us</li>
+        </ul>
+    </nav>
+    <span class="bg-slate-600 text-4xl text-blue-500 mx-[35rem] w-[30vw]">This is the best web development</span>
+    <br>
+    <!-- <button
+        class="bg-slate-500 text-white mx-4 my-4 rounded-md hover:bg-slate-400 text-sm active:bg-slate-900 focus:bg-green-400 focus:outline-red-600">Submit
+    </button> -->
+    <button class="btn">Submit</button>
+    <button class="btn">Click Me</button>
+    <!--put all unility classes into one single of our own custom class-->
+    <div class="afterComponent">Lorem ipsum, dolor sit amet consectetur adipisicing elit. </div>
+</body>
+
+</html>

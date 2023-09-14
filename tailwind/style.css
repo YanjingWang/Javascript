@@ -1,0 +1,8 @@
+/* 
+we have already downloaded below packages but haven't imported them yet
+three pre-existing layers
+*/
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

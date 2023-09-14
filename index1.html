@@ -5,6 +5,7 @@
 <!-- <script>
     console.log("hello world");
 </script> -->
+<!--use container to let people know it's including some elements like videos and images and use some margins and paddings-->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -19,6 +20,112 @@
         <title>Web Dev: a complete blog for beginners</title> <!-- put scripts at the end of body section-->
         <link rel="shortcut icon" href="/images/CharlotteWang.jpg" , type="image/x-icon">
         <!--should have show logo on url place-->
+        <style>
+            html {
+                background-color: black;
+                color: white;
+                font-size: 2rem;
+                /*font-size: 2rem; 1rem=16px*/
+            }
+
+            .container {
+                border: 2px purple solid;
+                background-color: aqua;
+                width: 200px;
+                height: 200px;
+                margin: 10px;
+                padding: 10px;
+                /* display: none; */
+                text-align: center;
+                font-size: 2rem;
+                /*display: none; to hide the element and blank space*/
+                display: grid;
+                animation-name: loading;
+                animation-duration: 10s;
+                animation-iteration-count: infinite;
+                animation-timing-function: ease-in-out;
+                animation-fill-mode: forwards;
+                position: relative;
+                /*how to use animation: animation: loading 3s linear 2s infinate forwards*/
+            }
+
+            /*Max width for mobile phone device: 688px*/
+            @media only screen and (min-width: 768px) {
+                #box-1 {
+                    display: block;
+                    background-color: blueviolet;
+                    color: blue;
+                    font-size: 2rem;
+                }
+            }
+
+            /*#box-1 is the Id selector, we want to select the element with Id box-1*/
+            /*we want the styles which we will add over here to be shown only when the screen size is greater than 768px*/
+            /*max width for tablets: 900px */
+            @media only screen and (max-width: 768px) and (min-width: 576px) {
+                #box-2 {
+                    display: block;
+                    background-color: blueviolet;
+                    color: blue;
+                    font-size: 2rem;
+                }
+            }
+
+            /*max width for PC desktop: 1200px*/
+            /*min width for altrawide monitors: 1312px*/
+            /*keyframes: to create animation*/
+            @keyframes loading {
+                0% {
+                    top: 0px;
+                    background-color: peru;
+                }
+
+                25% {
+                    background-color: yellow;
+                }
+
+                50% {
+                    background-color: blue;
+                }
+
+                75% {
+                    background-color: green;
+                }
+
+                100% {
+                    top: 200px;
+                    background-color: pink;
+                }
+            }
+
+            #navbar {
+                grid-area: navbar;
+            }
+
+            #main {
+                grid-area: main;
+            }
+
+            #footer {
+                grid-area: footer;
+            }
+
+            #section {
+                grid-area: section;
+            }
+
+            #aside {
+                grid-area: aside;
+            }
+
+            .grid-container {
+                display: grid;
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'main main main main'
+                    'footer footer footer footer';
+            }
+        </style>
 </head>
 
 <body>
@@ -130,6 +237,48 @@
     <details>Details view or hide</details>
     <footer>We have all copyrights and trademarks &copy;</footer>
     <h1>HTML5 Tags</h1>
+    <h1>Media Queries</h1>
+    <div class="container" id="box-1">This is Smart Phone</div>
+    <div class="container" id="box-2">This is tablet</div>
+    <div class="container" id="box-3">This is PC monitor</div>
+    <div class="container" id="box-4">This is altrawide monitor</div> <!--div.container#box-$*4-->
+    <h1>CSS Animation</h1>
+    <div class="container"></div> <!--.container-->
+    <h1>CSS Grids</h1>
+    <div class="container">
+        <div class="box">Box-1</div>
+    </div>
+    <div class="container">
+        <div class="box">Box-2</div>
+    </div>
+    <div class="container">
+        <div class="box">Box-3</div>
+    </div>
+    <div class="container">
+        <div class="box">Box-4</div>
+    </div>
+    <div class="container">
+        <div class="box">Box-5</div>
+    </div>
+    <div class="container">
+        <div class="box">Box-6</div>
+    </div>
+    <div class="container">
+        <div class="box">Box-7</div>
+    </div>
+    <div class="container">
+        <div class="box">Box-8</div>
+    </div>
+    <div class="container">
+        <div class="box">Box-9</div>
+    </div>
+    <div class="container">
+        <div id="navbar">Home About Services</div>
+        <div id="main">Main Content</div>
+        <div id="sidebar">Sidebar</div>
+        <div id="section">Section</div>
+        <div id="footer">Footer</div>
+    </div>
 </body>
 
 </html>

@@ -1,0 +1,24 @@
+/* 
+we have already downloaded below packages but haven't imported them yet
+three pre-existing layers
+*/
+
+@tailwind base;
+@tailwind components;
+
+.afterComponent {
+    text-align: center
+}
+
+@tailwind utilities;
+
+@layer components {
+    .btn {
+        @apply bg-slate-500 text-white mx-4 my-4 rounded-md hover: bg-slate-400 text-sm active:bg-slate-900 focus:bg-green-400 focus:outline-red-600
+    }
+}
+
+/* The custom Tailwind unility class inside btn will override the unility classes and have to shift custome unility class down so it works*/
+/* .btn {
+    @apply bg-slate-500 text-white mx-4 my-4 rounded-md hover: bg-slate-400 text-sm active:bg-slate-900 focus:bg-green-400 focus:outline-red-600
+} */

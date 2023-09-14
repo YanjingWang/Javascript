@@ -1,0 +1,39 @@
+<!--https://tailwindcss.com/docs/installation/play-cdn cdn is used to deliver your content through a network no need to install anything directly acess them if you are connected via internet-->
+<!--The <ul> tag is used to create an unordered list in HTML. It groups a collection of items having no numerical order. When changing the order of list items, the meaning does not change. Usually, the items of an unordered list are displayed with a bullet, which can be of different forms such as a circle, a dot, or a square 1. Each element of an unordered list is declared inside the <li> tag -->
+<!--can't deploy website by using CDN, need to run on Node.js, lownlaod pkgs on PowerShell terminal so web is production already
+if use cmd it will go to ur C drive users and admin folders and I have to change the directory
+run npm: npm init -y the y is used to finish task quickly then package.json is there the keywords:[] you can optimaze the search engine by adding keywords-->
+<!--http://tailwindcss.com/docs/installation/using-postcss 
+npm install -D postcss autoprefixer
+npm i vite
+npx tailwindcss init
+Deactivate live server by removing package.json     // "test": "echo \"Error: no test specified\" && exit 1" and replace it with "start":"vite"
+add tailwind css intelligence extension in VSCODE
+npm run start     Local:   http://localhost:5173/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Tailwind CSS</title>
+</head>
+
+<body>
+    <nav class="px-4 py-4 bg-yellow-400 text-purple-500">
+        <ul class="flex">
+            <li class="mx-2 cursor-pointer"><a href="#">Home</a></li>
+            <li class="mx-2 cursor-pointer"><a href="#">About us</a></li>
+            <li class="mx-2 cursor-pointer"><a href="#">Contact us</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1 class="text-black"> This website was built using tailwind css framework</h1>
+    </div>
+
+</body>
+
+</html>

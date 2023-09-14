@@ -1,0 +1,57 @@
+{
+    "_comment": "why use Json? because it is a standard format for data exchange between client(web applications) and server and also between server and server. those GET requests and POST requests are all using Json format to exchange data.",
+    "_store": "myJson=; in console to see the data",
+    "_parse": "JSON.parse(myJson) to parse the data",
+    "_parsedpeoperty": "parsed[isMale] to parse the data",
+    "_stringify": "JSON.stringify(myJson) to stringify the data",
+    "username": "John",
+    "age": 22,
+    "isMale": true,
+    "addressObj": {
+        "street": "123 Main St",
+        "city": "New York"
+    },
+    "bank": [
+        {
+            "name": "Bank of America",
+            "accountNumber": 123456,
+            "isActive": true
+        },
+        {
+            "name": "Chase",
+            "accountNumber": 654321,
+            "isActive": false
+        }
+    ],
+    "name": "jquery.iframe-transport.js",
+    "url": "www.github.com/blueimp/jQuery-File-Upload.git",
+    "description": "File Upload widget with multiple file selection, drag&drop support, progress bar, validation and preview images, audio and video for jQuery. Supports cross-domain, chunked and resumable file uploads and client-side image resizing. Works with any server-side platform (PHP, Python, Ruby on Rails, Java, Node.js, Go etc.) that supports standard HTML form file uploads.",
+    "keywordsArray": [
+        "jquery-plugin",
+        "file-upload",
+        "file-upload-widget",
+        "file-upload-plugin",
+        "multiple-file-upload",
+        "drag-and-drop",
+        "file-api",
+        "file-input",
+        "image-resize",
+        "image-resizing",
+        "image-upload",
+        "image-preview",
+        "audio-preview",
+        "video-preview",
+        "cross-domain",
+        "chunked",
+        "resumable",
+        "xhr2",
+        "xhr",
+        "upload",
+        "form",
+        "html5",
+        "html5-upload",
+        "jquery",
+        "javascript",
+        "blueimp"
+    ]
+}
